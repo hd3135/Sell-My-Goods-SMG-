@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Apane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+   <children>
+      <Label layoutX="228.0" layoutY="14.0" prefHeight="80.0" prefWidth="342.0" text="Admin Portal">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="AdminImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="LbAdminName" layoutX="228.0" layoutY="102.0" prefHeight="26.0" prefWidth="285.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="30.0" layoutY="280.0" prefHeight="698.0" prefWidth="937.0">
+        <columns>
+          <TableColumn fx:id="col_ProductName" prefWidth="110.19999694824219" text="Product Name" />
+          <TableColumn fx:id="col_Price" prefWidth="61.5999755859375" text="Price" />
+            <TableColumn fx:id="col_Category" prefWidth="111.0" text="Category" />
+            <TableColumn fx:id="col_Quantity" prefWidth="55.4000244140625" text="Quantity" />
+            <TableColumn fx:id="col_Store" prefWidth="102.79998779296875" text="Store Name" />
+            <TableColumn fx:id="col_ImaageLink" prefWidth="138.20001220703125" text="Image Link" />
+            <TableColumn fx:id="col_Owner" prefWidth="94.20001220703125" text="Store Owner" />
+            <TableColumn fx:id="col_OwnerContact" prefWidth="108.20001220703125" text="Owner Contact" />
+            <TableColumn fx:id="col_Location" prefWidth="159.79998779296875" text="Store Location" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="222.0" prefHeight="49.0" prefWidth="308.0" text="All listed products on store front">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TableView fx:id="table2" layoutX="1000.0" layoutY="280.0" prefHeight="698.0" prefWidth="893.0">
+        <columns>
+          <TableColumn fx:id="col_Name" prefWidth="109.79998779296875" text="Name" />
+          <TableColumn fx:id="col_Email" prefWidth="92.5999755859375" text="Email" />
+            <TableColumn fx:id="col_Store1" prefWidth="101.5999755859375" text="Store " />
+            <TableColumn fx:id="col_Location1" prefWidth="123.7999267578125" text="Location" />
+            <TableColumn fx:id="col_AccountName" prefWidth="98.2000732421875" text="Account Name" />
+            <TableColumn fx:id="col_AccountNumber" prefWidth="117.5999755859375" text="Account Number" />
+            <TableColumn fx:id="col_AccountType" prefWidth="84.800048828125" text="Account Type" />
+            <TableColumn fx:id="col_Branch" prefWidth="82.2000732421875" text="Branch" />
+            <TableColumn fx:id="col_BranchCode" prefWidth="83.5999755859375" text="Branch Code" />
+        </columns>
+      </TableView>
+      <Label layoutX="1022.0" layoutY="222.0" prefHeight="50.0" prefWidth="223.0" text="All listed sellers on site">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="1787.0" layoutY="19.0" mnemonicParsing="false" onAction="#ReturnHome" prefHeight="26.0" prefWidth="128.0" text="Return Home" />
+      <Button layoutX="353.0" layoutY="222.0" mnemonicParsing="false" onAction="#RemoveProduct" prefHeight="50.0" prefWidth="145.0" text="Remove Product" />
+      <Button layoutX="1245.0" layoutY="222.0" mnemonicParsing="false" onAction="#RemoveSeller" prefHeight="50.0" prefWidth="145.0" text="Remove Seller" />
+      <Button layoutX="601.0" layoutY="19.0" mnemonicParsing="false" onAction="#AdminRequests" prefHeight="19.0" prefWidth="214.0" text="View Admin Request" />
+      <TableView fx:id="table3" layoutX="818.0" layoutY="20.0" prefHeight="163.0" prefWidth="962.0">
+        <columns>
+          <TableColumn fx:id="namecol" prefWidth="124.20001220703125" text="Name" />
+          <TableColumn fx:id="emailcol" prefWidth="147.0" text="Email" />
+            <TableColumn fx:id="requestcol" prefWidth="675.0" text="Request" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

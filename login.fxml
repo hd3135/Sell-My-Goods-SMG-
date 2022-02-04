@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Lpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+      <VBox layoutX="72.0" layoutY="113.0" spacing="20.0">
+         <children>
+              <TextField fx:id="email" promptText="Email" />
+              <PasswordField fx:id="password" promptText="Password" />
+              <Label fx:id="isConnected" prefHeight="42.0" prefWidth="404.0" textAlignment="CENTER" textFill="#2c2727">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AppLogin" prefHeight="26.0" prefWidth="398.0" text="Login" />
+              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Register" prefHeight="26.0" prefWidth="400.0" text="Sign Up" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+        <Button layoutX="11.0" layoutY="14.0" mnemonicParsing="false" onAction="#Home" text="Home" />
+      <ImageView fx:id="loginImage" fitHeight="87.0" fitWidth="200.0" layoutX="241.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../login.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

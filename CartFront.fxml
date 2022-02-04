@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="aPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CartFrontController">
+   <children>
+      <Label layoutX="14.0" layoutY="11.0" prefHeight="77.0" prefWidth="301.0" text="Product Cart">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="226.0" prefHeight="26.0" prefWidth="100.0" text="Total -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <Label fx:id="price" layoutX="804.0" layoutY="226.0" prefHeight="26.0" prefWidth="185.0" text="R:">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="btnCheckOut" layoutX="722.0" layoutY="299.0" mnemonicParsing="false" onAction="#Proceed" prefHeight="53.0" prefWidth="254.0" text="Proceed to checkout" />
+      <ListView fx:id="lstView" layoutX="14.0" layoutY="100.0" prefHeight="665.0" prefWidth="654.0" />
+      <ImageView fx:id="viewCart" fitHeight="173.0" fitWidth="227.0" layoutX="761.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="txtUser" layoutX="758.0" layoutY="6.0" prefHeight="18.0" prefWidth="173.0" />
+   </children>
+</AnchorPane>

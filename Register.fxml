@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Rpane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+    <children>
+      <VBox layoutX="14.0" layoutY="66.0" prefHeight="412.0" prefWidth="228.0" spacing="20.0">
+         <children>
+              <TextField fx:id="txt_userName" promptText="Name" />
+              <TextField fx:id="txt_email" promptText="Email" />
+              <TextField fx:id="txt_phoneNumber" promptText="Phone" />
+              <PasswordField fx:id="txt_password1" promptText="Password" />
+              <PasswordField fx:id="txt_password2" promptText="Password" />
+            <HBox spacing="40.0">
+               <children>
+                  <RadioButton fx:id="RadioBtnCustomer" mnemonicParsing="false" text="Customer" />
+                  <RadioButton fx:id="RadioBtnSeller" mnemonicParsing="false" text="Seller" />
+               </children>
+            </HBox>
+              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AppRegister" prefHeight="26.0" prefWidth="150.0" text="Sign Up" />
+              <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#LoginPage" prefHeight="26.0" prefWidth="150.0" text="login" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+      </VBox>
+        <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#Home" text="Home" />
+        <Label fx:id="isConnected" layoutX="245.0" layoutY="48.0" prefHeight="315.0" prefWidth="341.0" textAlignment="CENTER" textFill="#191818">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="imageR" fitHeight="46.0" fitWidth="49.0" layoutX="84.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

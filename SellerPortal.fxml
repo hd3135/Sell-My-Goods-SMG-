@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="aPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SellerPortalController">
+   <children>
+      <Label layoutX="126.0" layoutY="21.0" prefHeight="81.0" prefWidth="256.0" text="Seller Portal">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="sellerImage" fitHeight="101.0" fitWidth="138.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="txtStoreName" layoutX="19.0" layoutY="103.0" prefHeight="73.0" prefWidth="406.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="167.0" prefHeight="35.0" prefWidth="213.0" text="Product Information:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="202.0" prefHeight="484.0" prefWidth="1036.0">
+        <columns>
+          <TableColumn fx:id="col_ProductName" prefWidth="131.60000324249268" text="Product Name" />
+          <TableColumn fx:id="col_Price" prefWidth="74.60000610351562" text="Price" />
+            <TableColumn fx:id="col_Category" prefWidth="114.20002746582031" text="Category" />
+            <TableColumn fx:id="col_Quantity" prefWidth="70.39996337890625" text="Quantity" />
+            <TableColumn fx:id="col_Store" prefWidth="119.4000244140625" text="Store" />
+            <TableColumn fx:id="col_ImaageLink" prefWidth="144.0" text="Image Link" />
+            <TableColumn fx:id="col_Owner" prefWidth="105.20001220703125" text="Owner" />
+            <TableColumn fx:id="col_OwnerContact" prefWidth="101.99993896484375" text="Owner Contact" />
+            <TableColumn fx:id="col_Location" prefWidth="177.99993896484375" text="Product Location" />
+        </columns>
+      </TableView>
+      <Pane fx:id="UserPane" layoutX="1125.0" layoutY="56.0" prefHeight="246.0" prefWidth="763.0">
+         <children>
+            <HBox layoutX="16.0" layoutY="20.0" spacing="100.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="77.0" text="Name:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="txtName" prefHeight="26.0" prefWidth="197.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="80.0" spacing="100.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="77.0" text="Email:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="txtEmail" prefHeight="26.0" prefWidth="184.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="136.0" spacing="100.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="78.0" text="Phone:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="txtPhone" prefHeight="26.0" prefWidth="195.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="202.0" spacing="100.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="77.0" text="Role:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="txtRole" prefHeight="26.0" prefWidth="202.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label layoutX="1125.0" layoutY="21.0" prefHeight="35.0" prefWidth="221.0" text="User Information:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Pane fx:id="sPane" layoutX="1125.0" layoutY="352.0" prefHeight="410.0" prefWidth="763.0">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Store Owner:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="135.0" text="Store Location:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="79.0" text="Store Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="22.0" text="Owner Email:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtOwner" layoutX="185.0" layoutY="23.0" prefHeight="25.0" prefWidth="194.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtStore" layoutX="185.0" layoutY="80.0" prefHeight="25.0" prefWidth="194.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtStroreLocation" layoutX="185.0" layoutY="136.0" prefHeight="25.0" prefWidth="194.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtOwnerEmail" layoutX="557.0" layoutY="23.0" prefHeight="25.0" prefWidth="194.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="195.0" text="Store Account Information:">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="242.0" text="Account Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="303.0" text="Account Number:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="360.0" text="Account Type:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAccountName" layoutX="193.0" layoutY="243.0" prefHeight="25.0" prefWidth="176.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAccountNumber" layoutX="199.0" layoutY="304.0" prefHeight="25.0" prefWidth="176.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAccountType" layoutX="199.0" layoutY="361.0" prefHeight="25.0" prefWidth="176.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="445.0" layoutY="242.0" text="Branch:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="445.0" layoutY="291.0" text="Branch Code:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtBranch" layoutX="610.0" layoutY="243.0" prefHeight="25.0" prefWidth="112.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtBranchCode" layoutX="610.0" layoutY="292.0" prefHeight="25.0" prefWidth="139.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="509.0" layoutY="370.0" mnemonicParsing="false" onAction="#UpdateAccountInfo" prefHeight="26.0" prefWidth="236.0" text="Update Account Information" />
+         </children></Pane>
+      <Label layoutX="1132.0" layoutY="317.0" prefHeight="31.0" prefWidth="207.0" text="Store Information:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfProductName" layoutX="11.0" layoutY="736.0" prefHeight="26.0" prefWidth="318.0" promptText="product name" />
+      <TextField fx:id="txfProductPrice" layoutX="11.0" layoutY="781.0" prefHeight="26.0" prefWidth="318.0" promptText="product price" />
+      <TextField fx:id="txfQuantity" layoutX="11.0" layoutY="950.0" prefHeight="26.0" prefWidth="318.0" promptText="quantity" />
+      <TextField fx:id="txfStoreName" layoutX="404.0" layoutY="736.0" prefHeight="26.0" prefWidth="318.0" promptText="store name" />
+      <TextField fx:id="txfImageLink" layoutX="404.0" layoutY="781.0" prefHeight="26.0" prefWidth="318.0" promptText="image link" />
+      <TextField fx:id="txfOwnersName" layoutX="404.0" layoutY="828.0" prefHeight="26.0" prefWidth="318.0" promptText="owners name" />
+      <TextField fx:id="txfContact" layoutX="404.0" layoutY="877.0" prefHeight="26.0" prefWidth="318.0" promptText="contact details" />
+      <TextField fx:id="txfLocation" layoutX="404.0" layoutY="937.0" prefHeight="26.0" prefWidth="318.0" promptText="location" />
+      <Button layoutX="780.0" layoutY="795.0" mnemonicParsing="false" onAction="#AddProduct" prefHeight="74.0" prefWidth="150.0" text="Add Product" />
+      <Label layoutX="17.0" layoutY="696.0" prefHeight="26.0" prefWidth="293.0" text="Enter product details to add to store:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtKH" layoutX="10.0" layoutY="859.0" mnemonicParsing="false" text="Kitchen &amp; Home" />
+      <RadioButton fx:id="rbtA" layoutX="11.0" layoutY="902.0" mnemonicParsing="false" text="Apparel" />
+      <RadioButton fx:id="rbtS" layoutX="150.0" layoutY="902.0" mnemonicParsing="false" text="Sneakers" />
+      <RadioButton fx:id="rbtCE" layoutX="150.0" layoutY="859.0" mnemonicParsing="false" text="Computer &amp; Electroics" />
+      <Label layoutX="14.0" layoutY="823.0" text="Select Category:" />
+      <Button layoutX="1825.0" layoutY="14.0" mnemonicParsing="false" onAction="#Home" prefHeight="26.0" prefWidth="69.0" text="Home" />
+      <Button layoutX="781.0" layoutY="167.0" mnemonicParsing="false" onAction="#Remove" prefHeight="26.0" prefWidth="270.0" text="Remove product from store account" />
+      <Button layoutX="1690.0" layoutY="950.0" mnemonicParsing="false" onAction="#DeleteStore" prefHeight="26.0" prefWidth="184.0" text="Delete store" />
+      <Label fx:id="lbLabel" layoutX="780.0" layoutY="98.0" prefHeight="61.0" prefWidth="270.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="1561.0" layoutY="14.0" mnemonicParsing="false" onAction="#AdminRequest" prefHeight="26.0" prefWidth="198.0" text="Create admin request" />
+   </children>
+</AnchorPane>

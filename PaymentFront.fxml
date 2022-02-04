@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="APANE" prefHeight="900.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PaymentFrontController">
+   <children>
+      <Label layoutX="205.0" layoutY="14.0" prefHeight="71.0" prefWidth="358.0" text="Check-Out &amp; Payment">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font></Label>
+      <ImageView fx:id="iv" fitHeight="180.0" fitWidth="201.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="205.0" layoutY="80.0" prefHeight="46.0" prefWidth="130.0" text="Total Cart:">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="AmountLabel" layoutX="351.0" layoutY="80.0" prefHeight="46.0" prefWidth="179.0">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font></Label>
+      <HBox layoutX="582.0" layoutY="63.0">
+         <children>
+            <Pane fx:id="pPane" prefHeight="180.0" prefWidth="714.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="16.0" spacing="35.0">
+                     <children>
+                        <HBox spacing="20.0">
+                           <children>
+                              <Label text="Name: ">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="txtName" prefHeight="26.0" prefWidth="192.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="20.0">
+                           <children>
+                              <Label text="Email: ">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="txtEmail" prefHeight="24.0" prefWidth="187.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="20.0">
+                           <children>
+                              <Label text="Phone:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="txtPhone" prefHeight="22.0" prefWidth="188.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="366.0" layoutY="14.0" spacing="20.0">
+                     <children>
+                        <Label text="Site Role:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtRole" prefHeight="26.0" prefWidth="172.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="582.0" layoutY="14.0" prefHeight="39.0" prefWidth="226.0" text="Account Information:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="273.0" text="Purchase Information:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TBview" layoutX="13.0" layoutY="315.0" prefHeight="546.0" prefWidth="513.0">
+        <columns>
+          <TableColumn fx:id="StoreName" prefWidth="174.59999084472656" text="Store Name" />
+          <TableColumn fx:id="ProductName" prefWidth="204.5999755859375" text="Product Details" />
+            <TableColumn fx:id="ProductPrice" prefWidth="131.79998779296875" text="Product Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="600.0" layoutY="265.0" text="Payment Information:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="612.0" layoutY="315.0">
+         <content>
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="boxV" prefHeight="548.0" prefWidth="683.0" />
+               </content>
+            </ScrollPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
